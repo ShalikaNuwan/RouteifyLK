@@ -1,4 +1,4 @@
-# NaviAI
+# NaviAI✈️
 
 Meet NaviAI – your intelligent travel companion for navigating your entire journey across Sri Lanka with ease and efficiency.
 
