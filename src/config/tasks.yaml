@@ -1,0 +1,8 @@
+trip_data_extractor:
+  description: >
+    extract the trip details from the input prompt {input_details} given by the user.
+  expected_output: >
+    detailed output of the time period in sri lanka,
+    the locations where the user wants to go,
+    prefferes hotels / lodges, meal preferences,
+    Total budget,
