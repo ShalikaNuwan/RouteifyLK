@@ -4,8 +4,15 @@ from llm import llm
 import yaml
 
 def load_yaml(path):
-    with open(path, 'r') as file:
-        return yaml.safe_load(file)
+    try:  
+        with open(path, 'r') as file:  
+            return yaml.safe_load(file)  
+    except FileNotFoundError:  
+        print(f"File {path} not found.")  
+        return {}  
+    except Exception as e:  
+        print(f"Error loading YAML: {e}")  
+        return {} 
 
 @CrewBase
 class TripPlannerCrew:
