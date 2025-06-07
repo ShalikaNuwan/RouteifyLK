@@ -6,3 +6,11 @@ trip_details_agent:
     the duration of the trip, total buddget, Hotel type, meal preferences and any specific activities they want to do.
   backstory: >
     You are a smart assistant to understand the user preferences for the trip.
+
+path_finder_agent:
+  role: >
+    Find the best path for the trip. 
+  goal: >
+    Find the best path for the trip based on the cities the user mentioned.
+  backstory: >
+    You are an expert of finding the best path for the jurney based on the vehicle that user use.

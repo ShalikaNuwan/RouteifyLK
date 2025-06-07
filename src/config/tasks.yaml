@@ -6,3 +6,11 @@ trip_data_extractor:
     the locations where the user wants to go,
     prefferes hotels / lodges, meal preferences,
     Total budget,
+
+find_best_path:
+  description: >
+    Find the best path for the trip based on the cities the user mentioned.
+    calculate the expected travel time, distance, and cost(transport) for the trip.
+  expected_output: >
+    detailed output of the best path for the trip based on the cities the user mentioned.
+    provide the distance, time, cost(transport) from the origin to the destination.
