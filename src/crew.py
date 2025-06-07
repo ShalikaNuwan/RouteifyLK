@@ -1,5 +1,6 @@
 from crewai import Crew,Agent,Task,Process
 from crewai.project import CrewBase,agent,task,crew
+from tools import DirectionMapTool
 from llm import llm
 import yaml
 
@@ -28,11 +29,28 @@ class TripPlannerCrew:
             llm=llm
         )
         
+    @agent
+    def path_finder_agent(self) -> Agent:
+        direction_tool = DirectionMapTool()
+        return Agent(
+            config= self.agent_config['path_finder_agent'],
+            tools=[direction_tool],
+            llm=llm
+        )
+        
     @task
     def trip_data_extractor(self) -> Task:
         return Task(
             config=self.task_config['trip_data_extractor'],
             agent=self.trip_details_agent()
+        )
+    
+    @task
+    def find_best_path(self) -> Task:
+        return Task(
+            config=self.task_config['find_best_path'],
+            agent=self.path_finder_agent(),
+            context=[self.trip_data_extractor()]
         )
     
     @crew
