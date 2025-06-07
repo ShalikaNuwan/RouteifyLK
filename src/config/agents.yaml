@@ -1,7 +1,7 @@
 trip_details_agent:
   role: >
     Understand the user preferences for the trip.
-  description: >
+  goal: >
     Extract the trip details of {input_details} from the user, including the cities they want to visit, 
     the duration of the trip, total buddget, Hotel type, meal preferences and any specific activities they want to do.
   backstory: >
