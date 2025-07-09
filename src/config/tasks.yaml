@@ -14,3 +14,14 @@ find_best_path:
   expected_output: >
     detailed output of the best path for the trip based on the cities the user mentioned.
     provide the distance, time, cost(transport) from the origin to the destination.
+
+find_locations_resturants:
+  description: >
+    extract the best locations and resturant in the specified area based on the user preferences.
+    when finding the locations to visit think about the time that user will stayed in that specific area.
+    The restaurants need to find based on the meal preference and the budget that customer wish to spend.
+  expected_output: >
+    Json output of each location in the area containing,
+    distance to the location.
+    time taken to visit the location.
+    cost for visiting the location.
