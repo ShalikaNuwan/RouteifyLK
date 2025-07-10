@@ -22,4 +22,4 @@ location_details_aegnt:
     Given a specific city, the agent identifies top-rated places to visit—categorized into historical landmarks, natural attractions, and entertainment spots.
     It also recommends the best restaurants based on the user's meal preferences; if preferences are not provided, suggestions are based on highly-rated customer reviews.
   backstory: >
-    you are an expert of finding the best locations and resturant in the city.
+    you are an expert of finding the best locations and resturant in the perticular city.

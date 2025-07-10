@@ -17,11 +17,12 @@ find_best_path:
 
 find_locations_resturants:
   description: >
-    extract the best locations and resturant in the specified area based on the user preferences.
+    extract extract the best locations and resturant in the specified area based on the user preferences.
+    If the customer has provided any specific cities, only find the locations and restuarants based on the specified cities.
     when finding the locations to visit think about the time that user will stayed in that specific area.
     The restaurants need to find based on the meal preference and the budget that customer wish to spend.
   expected_output: >
     Json output of each location in the area containing,
     distance to the location.
     time taken to visit the location.
-    cost for visiting the location.
+    cost for visiting the location.  
